@@ -1,0 +1,8 @@
+.vscode/
+tags
+
+build/
+devel/
+install/
+Release/
+Debug/
