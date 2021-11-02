@@ -1,9 +1,7 @@
 include(CMakeFindDependencyMacro)
 
-# TODO: capture @var@ config variables
+# find_dependency(fmtlib REQUIRED)
 
-find_dependency(fmtlib REQUIRED)
+# TODO: add dependencies
 
-# TODO: extra steps
-
-include("${CMAKE_CURRENT_LIST_DIR}/${PROJECT_NAME}Targets.cmake")
+include("${CMAKE_CURRENT_LIST_DIR}/@PROJECT_NAME@Targets.cmake")

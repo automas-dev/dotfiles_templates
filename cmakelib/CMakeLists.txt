@@ -75,7 +75,7 @@ write_basic_package_version_file(
     COMPATIBILITY AnyNewerVersion)
 
 # Copy the Config file to the build dir
-configure_file(cmake/ProjectConfig.cmake ${PROJECT_NAME}Config.cmake COPYONLY)
+configure_file(cmake/ProjectConfig.cmake ${PROJECT_NAME}Config.cmake @ONLY)
 
 # Add Config and ConfigVersion files to install
 install(FILES

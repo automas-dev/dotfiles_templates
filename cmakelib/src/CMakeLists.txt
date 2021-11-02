@@ -35,11 +35,6 @@ source_group(TREE "${PROJECT_SOURCE_DIR}/include"
     PREFIX "Header Files"
     FILES ${HEADER_LIST})
 
-# Export targets so build dir can be used by other projects
-export(TARGETS ${TARGET}
-    NAMESPACE ${PROJECT_NAME}::
-    FILE ${PROJECT_NAME}Targets.cmake)
-
 # Add target to Project Targets for install
 install(TARGETS ${TARGET}
     EXPORT ${PROJECT_NAME}Targets
