@@ -1,0 +1,11 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ROS: Launch",
+            "request": "launch",
+            "target": "${DOLLAR}{workspaceFolder}launch/${NAME}.launch",
+            "type": "ros"
+        }
+    ]
+}
