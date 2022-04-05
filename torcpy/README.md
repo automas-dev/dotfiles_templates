@@ -1,8 +1,4 @@
-# Map Speed Overlay
-
-Generate a geojson file that shows points with current velocity. This script
-takes a discovery test uuid with start and end timestamps to generate the
-geojson file.
+# PROJECT_NAME_HERE
 
 ## Install
 
