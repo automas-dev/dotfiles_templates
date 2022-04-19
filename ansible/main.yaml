@@ -1,0 +1,6 @@
+#!./.venv/bin/ansible-playbook
+- name: Hello World
+  hosts: localhost
+  tasks:
+    - name: Hello World
+      shell: echo Hello World
