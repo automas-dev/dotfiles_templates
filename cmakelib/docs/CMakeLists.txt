@@ -1,5 +1,9 @@
 set(DOXYGEN_EXTRACT_ALL YES)
 set(DOXYGEN_BUILTIN_STL_SUPPORT YES)
+set(DOXYGEN_EXCLUDE_PATTERNS default_font.h)
+set(DOXYGEN_USE_MDFILE_AS_MAINPAGE "README.md")
 
-doxygen_add_docs(docs lib/lib.hpp "${CMAKE_CURRENT_SOURCE_DIR}/mainpage.md"
+doxygen_add_docs(docs 
+    "${PROJECT_SOURCE_DIR}/README.md"
+    "${PROJECT_SOURCE_DIR}/include"
     WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/include")
