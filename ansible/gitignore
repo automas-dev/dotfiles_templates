@@ -1,3 +1,19 @@
+ Created by https://www.gitignore.io/api/visualstudiocode
+# Edit at https://www.gitignore.io/?templates=visualstudiocode
+
+### VisualStudioCode ###
+.vscode/**/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+**/.history
+
+# End of https://www.gitignore.io/api/visualstudiocode
+
 # Some rules taken from https://github.com/github/gitignore/blob/master/Python.gitignore
 
 # Byte-compiled / optimized / DLL files
@@ -7,7 +23,6 @@ __pycache__/
 
 # IDE's
 tags
-.vscode/
 
 # Distribution / packaging
 build/
