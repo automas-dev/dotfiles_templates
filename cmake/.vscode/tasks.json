@@ -1,14 +1,26 @@
 {
 	"version": "2.0.0",
 	"tasks": [
-		{
-			"label": "cmake",
-			"type": "cmake",
-			"command": "build",
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			}
-		}
+        {
+            "type": "cmake",
+            "label": "CMake: build",
+            "command": "build",
+            "targets": [
+                "all"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                {
+                    "base": "$gcc",
+                    "fileLocation": ["relative", "${workspaceRoot}/build"]
+                }
+            ],
+            "detail": "CMake template build task",
+            "presentation": {
+                "reveal": "always",
+                "clear": true,
+                "focus": true
+            }
+        }
 	]
 }
