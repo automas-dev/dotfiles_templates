@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Exit if any command fails
+set -e
+
 SCRIPT_DIR=$(realpath "$(dirname "$0")")
 
 install_script() {
