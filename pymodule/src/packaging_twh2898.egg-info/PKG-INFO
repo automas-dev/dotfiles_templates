@@ -1,10 +1,10 @@
 Metadata-Version: 2.1
-Name: packaging-twh2898
+Name: packaging-automas-dev
 Version: 0.0.1
 Summary: A small example package
-Home-page: https://gitlab.com/twh2898/packaging
+Home-page: https://gitlab.com/automas-dev/packaging
 Author: Thomas Harrison
-Author-email: twh2898@vt.edu
+Author-email: theharrisoncrafter@gmail.com
 License: UNKNOWN
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
