@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+
+jobs:
+  increment_version:
+    uses: automas-dev/reusable-workflows/.github/workflows/increment_version.yml@main
+    secrets: inherit
+    if: github.ref == 'refs/heads/main' && !contains(github.event.head_commit.message, 'NO RELEASE')
+
+    permissions:
+      contents: write
